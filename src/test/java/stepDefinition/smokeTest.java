@@ -22,8 +22,8 @@ public class smokeTest {
 
 	@When("^I enter valid \"(.*?)\" and valid \"(.*?)\"$")
 	public void i_enter_valid_and_valid(String arg1, String arg2)  {
-		driver.findElement(By.id("username")).sendKeys(arg1);
-		driver.findElement(By.id("password")).sendKeys(arg2);
+		driver.findElement(By.id("email")).sendKeys(arg1);
+		driver.findElement(By.id("pass")).sendKeys(arg2);
 	   
 	}
 
@@ -34,7 +34,7 @@ public class smokeTest {
 	}
 
 	@Then("^application should be closed$")
-	public void application_should_be_closed() throws Throwable {
+	public void application_should_be_closed()  {
 	    
 	    
 	}
